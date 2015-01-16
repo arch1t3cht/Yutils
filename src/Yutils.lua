@@ -3525,5 +3525,10 @@ Yutils = {
 	}
 }
 
+-- Put library in global scope (if first script argument is true)
+if ({...})[1] then
+	_G.Yutils = Yutils
+end
+
 -- Return library to script loader
 return Yutils
